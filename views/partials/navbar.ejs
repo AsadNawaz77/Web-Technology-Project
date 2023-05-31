@@ -1,0 +1,25 @@
+<nav class="nav">
+    <div class="left">
+        <img src="/img/pic.png" alt="Portfolio" class="logo1">
+    </div>
+
+    <div class="menu">
+
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <div class="right">
+        <a href="/">Home</a><a href="/fav">Favorite People</a><a href="/favcities">Favorite
+            Cities</a><a href="/Tourspot">Tourist Spots</a><a href="/contact">Contact</a>
+        </a>
+    </div>
+</nav>
+
+<script>
+    x = document.querySelector('.nav');
+    x.onclick = function () {
+        n = document.querySelector('.right');
+        n.classList.toggle('ac')
+    }
+</script>

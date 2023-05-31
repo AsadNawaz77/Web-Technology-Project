@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <!DOCTYPE html>
+    <html>
+
+    <link rel="stylesheet" href="/css/ass.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+    <%- include("partials/navbar.ejs") %>
+
+
+
+        <div class="cc-container">
+            <div class="cc-left">
+                <h2>Send Me a message</h2>
+                <form action="/send" method="post">
+                    <div class="cc-top">
+                        <label for="name">Name*</label>
+                        <input type="text" placeholder="Your name" id="name" name="name">
+                        <label for="Phone">Phone</label>
+                        <input type="number" placeholder="Phone#" name="Phone" id="Phone">
+                        <p>Message*</p>
+                        <label for="message" style="color: black;">Write your message</label>
+                        <input type="text" name="msg" id="message">
+
+                    </div>
+                    <div class="cc-bottom">
+
+                        <label for="email" class="label">Email*</label>
+                        <input type="email" placeholder="Your email" id="email" name="email">
+                        <label for="company" class="label">Company</label>
+                        <input type="text" placeholder="Company name" name="company" id="company">
+
+                    </div>
+                    <button>Send Message</button>
+
+                </form>
+            </div>
+            <div class="cc-right">
+                <div class="info">
+                    <h3>Contact</h3>
+                    <p>Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit. <br> Numquam, illum! <br> </p>
+                    <ul class="infos">
+                        <li>
+
+                            <i class='fa-solid fa-map-location'></i>
+                            <span class="span"> 9757 Aspen Lane South Richmond <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hill, NY
+                                11419</span>
+                        </li>
+                        <li>
+                            <span>&#9990;</span>
+                            <span class="span">
+                                +1 (291) 939 9321</span>
+                        </li>
+                        <li>
+                            <i class='fa fa-inbox'></i>
+                            <span class="span">info@mywebsite.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <%- include("partials/footer.ejs") %>
+
+            <script src="/express/public/js/responsive.js"></script>
+</body>
+
+</html>

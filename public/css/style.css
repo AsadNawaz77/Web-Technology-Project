@@ -1,0 +1,75 @@
+body {
+    background-color: #8bbabb;
+}
+
+.cc-left h2 {
+    color: #35477d;
+    font-size: 20px;
+    margin-bottom: 30px;
+    padding-left: 15%;
+}
+
+@media screen and (min-width:770px)and (max-width:993px) {
+    .cc-container {
+        max-width: 720px;
+
+    }
+}
+
+@media screen and (min-width:500px)and (max-width:765px) {
+    .cc-container {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width:499px) {
+    .cc-container {
+        max-width: 540px;
+        flex-direction: column;
+        justify-content: none;
+        height: fit-content;
+        align-items: center;
+        max-width: 100%;
+        gap: 20px;
+    }
+
+    .cc-right ul,
+    .cc-right li {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .cc-left{
+        width: 100%;
+    }
+    .cc-right {
+        text-align: center;
+        font-size: small;
+        width: 100%;
+    }
+
+    .cc-bottom {
+        margin-bottom: 30px;
+    }
+
+    
+    #message {
+        width: 100%;
+    }
+}
+
+button {
+    width: fit-content;
+    background-color: #35477d;
+    color: white;
+    padding: 10px;
+    margin: 30px 0;
+}
+
+/* .cc-container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+} */
